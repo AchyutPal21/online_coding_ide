@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding IDE</title>
+    <link rel="shortcut icon" href="/img/code.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ide_container">
+            <div class="header_div">
+                <h1>Coding IDE</h1>
+            </div>
+            <div id="sumbitcode" class="programming_form">
+                <!-- Actions Area -->
+                <div class="actions_area">
+                    <div class="actions_inputs">
+                        <div class="action_input_btns">
+                            <!-- Language choice options -->
+                            <div class="code_languages">
+                                <label for="languages">Language:</label>
+                                <select id="languages">
+                                <option value="c">C</option>
+                                <option value="cpp">C++</option>
+                                <option value="java">Java</option>
+                                <option value="py">Python</option>
+                                </select>
+                            </div>
+                            <!-- Run the code Button -->
+                            <div class="run_code_btn">
+                                <button type="submit" class="runcodeBtn" >Run</button>
+                                <div class="coderunning"></div>
+                            </div>
+                        </div>
+                        <div class="action_input_textarea">
+                            <h4 class="code_input_title">Input Area</h4>
+                            <textarea name="codeinput" id="codeinput" placeholder="Code input separated by new line"></textarea>
+                        </div>
+                    </div>                    
+                    <div class="actions_outputs">
+                        <h4 class="code_output_title">Code Output</h4>
+                        <textarea name="codeinput" id="codeoutput" readonly placeholder="Your code output"></textarea>
+                    </div>
+                </div>
+                <!-- Coding Area -->
+                <div class="code_area" id="codeeditor"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script type="module" src="/js/ide/ace.js"></script>
+    <script type="module" src="/js/ide/theme-monokai.js"></script>
+    <script type="module" src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+}
+.ide_container {
+  height: inherit;
+}
+
+.header_div {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #403e34;
+}
+
+.header_div h1 {
+  display: inline-block;
+  padding: 4px;
+  color: #d9d6d0;
+  border: 2px solid #d9d6d0;
+}
+
+.programming_form {
+  height: 90%;
+  display: flex;
+}
+
+.actions_area {
+  width: 30%;
+  height: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #272923;
+}
+
+.actions_inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+}
+
+.action_input_btns {
+  /* background-color: lightseagreen; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.code_languages {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.code_languages label {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #d9d6d0;
+  padding: 10px 0;
+}
+
+.code_languages select {
+  font-size: 01rem;
+  font-weight: bold;
+  padding: 4px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: #272923;
+  background-color: #fff;
+  /* border: 2px solid #d9d6d0; */
+}
+
+.run_code_btn {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #042940; */
+}
+.runcodeBtn {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 16px 32px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #005c53;
+  cursor: pointer;
+}
+
+.action_input_textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.code_input_title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d9d6d0;
+}
+
+.action_input_textarea textarea {
+  width: 90%;
+  height: 100px;
+  resize: none;
+  outline: none;
+  border: none;
+  overflow-y: auto;
+  margin-top: 4px;
+  border-radius: 8px;
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #808080;
+  caret-color: #042940;
+  /* border: 2px solid #d9d6d0; */
+}
+
+.actions_outputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.code_output_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #d9d6d0;
+}
+
+.actions_outputs textarea {
+  padding: 8px;
+  width: 90%;
+  height: 250px;
+  font-size: 0.8rem;
+  font-weight: lighter;
+  outline: none;
+  border: none;
+  overflow-y: auto;
+  resize: none;
+  border-radius: 8px;
+  /* border: 2px solid #d9d6d0; */
+  margin-top: 4px;
+}
+.code_area {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  font-size: 1rem;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.spinner {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 5px solid #cfcfcf;
+  border-top-color: #1e90ff;
+  border-radius: 50%;
+  animation: loadingspinner 0.9s linear infinite;
+}
+
+@keyframes loadingspinner {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,5 @@
+PORT=
+NODE_ENV=""
+
+# add your CORS
+ALLOWED_CORS_CLIENTS=""
